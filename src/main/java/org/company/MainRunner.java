@@ -9,11 +9,8 @@ public class MainRunner {
 
         Scanner in = new Scanner(System.in);
         int days;
-        while (true) {
-            System.out.print("Введите количество дней работы : ");
-            days = in.nextInt();
-            break;
-        }
+        System.out.print("Введите количество дней работы : ");
+        days = in.nextInt();
         RunnerCompany.run();
         for (int i = 0; i < days; i++) {
             log.info("ДЕНЬ " + (i + 1));

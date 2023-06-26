@@ -15,10 +15,10 @@ public class Office implements Workable {
 
     @Override
     public void work() {
-        System.out.println(getName());
+        log.info(getName());
         for (Worker worker : workers) {
             worker.work();
-            profit += worker.getProfit();
+            this.profit += worker.getProfit();
         }
         log.info("Общая прибыль офиса " + getName() + " составила " + getProfit());
         //System.out.println("Общая прибыль офиса "+getName()+" составила "+getProfit());

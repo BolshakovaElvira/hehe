@@ -12,7 +12,7 @@ public class Company implements Workable {
     public void work() {
         for (Office office : offices) {
             office.work();
-            profit += office.getProfit();
+            this.profit += office.getProfit();
         }
         log.info("Общая прибыль компании составила " + getProfit());
         //System.out.println("Общая прибыль компании составила "+getProfit());
